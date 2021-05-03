@@ -41,7 +41,7 @@ print("\nObjetivos\n")
 print(objetivos)
 
 
-clf = MLPClassifier(solver='lbfgs', alpha=0.01, activation="logistic", learning_rate="constant",
+clf = MLPClassifier(solver='lbfgs', alpha=0.01, activation="logistic", learning_rate="constant", 
                     hidden_layer_sizes=(num_intermedias, ), random_state=1)
 
 clf.fit(conjunto_datos, objetivos)
@@ -50,5 +50,4 @@ print("Resultado de prediciones")
 print(clf.predict(conjunto_datos))
 print("Resultado datos de Prueba")
 print(conjunto_test)
-print(clf.predict (conjunto_test))
-
+print(clf.predict(conjunto_test))
